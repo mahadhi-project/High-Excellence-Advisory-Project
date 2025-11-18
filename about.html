@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: 'Times New Roman', serif;
+  font-family: Times New Roman, sans-serif;
   background-color: #DAEEF3;
   color: #222;
   display: flex;
@@ -20,19 +20,18 @@ body {
   min-height: 100vh;
 }
 
-/* HEADER */
 .logo-title {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
+  justify-content: center; 
+  gap: 10px; 
 }
 
 .logo-img {
-  width: 45px;
-  height: auto;
+  width: 40px;    
+  height: auto; 
 }
-
+     
 header {
   position: fixed;
   top: 0;
@@ -52,49 +51,107 @@ header h1 {
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  background-color: rgba(0,0,0,0.2);
-  backdrop-filter: blur(2px);
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   background-color: rgba(0,0,0,0.2);
+   backdrop-filter: blur(2px);
 }
 
 nav ul li a {
-  display: block;
-  color: white;
-  padding: 10px 22px;
-  font-weight: 600;
-  text-decoration: none;
+   display: block;
+   color: white;
+   padding: 10px 22px;
+   font-weight: 600;
+   text-decoration: none;
 }
 
 nav ul li a:hover {
-  background-color: #0094ff;
-  border-radius: 6px;
+   background-color: #0094ff;
+   border-radius: 6px;
+}
+        
+main {            
+    width: 90%;            
+    max-width: 900px;            
+    margin: 0 auto;            
+    padding: 20px;          
+    text-align: center;            
+    margin-top: 160px;         
 }
 
+        
+h2 {            
+    color: #FCA012;          
+    font-size: 28px;           
+    margin-bottom: 25px;            
+    font-weight: 600;           
+    text-transform: uppercase;
+}
 
-main {
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-  margin-top: 160px;
+       
+p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
 }
 
 .section-title {
-  color: #FCA012;
+  color: #FCA012;        
   margin-top: 30px;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
-  text-transform: uppercase;
+}        
+
+main p {
+  max-width: 900px;
+  margin: 10px auto;
+  line-height: 1.7;
+  font-size: 18px;
+  color: #1e2a3a;        
+  text-align: left;
 }
 
-p {
-  font-size: 18px;
+main ul {
+  max-width: 900px;
+  margin: 15px auto;
+  padding-left: 40px;
   line-height: 1.7;
-  margin-bottom: 20px;
-  text-align: left;
+  font-size: 18px;
+  color: #1e2a3a;
+}
+
+main ul li {
+  margin-bottom: 10px;
+}
+        
+.values-box {        
+    background: white;         
+    padding: 25px;           
+    border-radius: 12px;
+            
+box-shadow: 0 3px 10px rgba(0,0,0,0.15);           
+    text-align: left;           
+    max-width: 850px;
+    margin: 20px auto 40px auto;     
+}
+
+            
+.values-box p {               
+    margin-bottom: 15px;           
+}
+
+            
+.values-box strong {             
+    color: #003366;       
+}
+        
+footer {
+    text-align: center;        
+    background-color: #003366;    
+    padding: 18px 0;           
+    color: white;           
+    font-size: 15px;      
 }
 
 .facility-section {
@@ -157,45 +214,33 @@ p {
   text-align: center;
 }
 
-
-footer {
-  text-align: center;
-  background-color: #003366;
-  padding: 18px 0;
-  color: white;
-  font-size: 15px;
-  margin-top: 40px;
-}
 </style>
-
 </head>
 
 <body>
 
-<header>
-  <div class="logo-title">
-      <img src="Logo.png" class="logo-img" alt="Logo">
-      <h1>High Excellence Advisory</h1>
-  </div>
-
-  <nav>
+   <header>
+<div class="logo-title">
+    <img src="Logo.png" class="logo-img" alt="Logo"> 
+   <h1>High Excellence Advisory</h1>
+</div>
+   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="services.html">Our Services</a></li>
-      <li><a href="universities.html">Studies in Malaysia</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
+       <li><a href="index.html" target="_self">Home</a></li>
+       <li><a href="about.html" target="_self">About Us</a></li>
+       <li><a href="services.html" target="_self">Our Services</a></li>
+       <li><a href="universities.html" target="_self">Studies in Malaysia</a></li>
+       <li><a href="contact.html" target="_self">Contact Us</a></li>
+   </ul>
   </nav>
 </header>
 
-<main>
-
-  <h2 class="section-title">About Us</h2>
+    <main>
+ <h2 class="section-title">About Us</h2>
   <p>
-    High Excellence Advisory is a dynamic and licensed student recruitment agency based in 
-    Petaling Jaya, Selangor, Malaysia. We specialize in connecting aspiring international students 
-    from the ASEAN region with top-tier private colleges and universities across Malaysia.
+    High Excellence Advisory is a dynamic and licensed student recruitment agency based in the heart of 
+    Petaling Jaya, Selangor, Malaysia. We specialize in connecting aspiring international students from 
+    ASEAN region with top-tier private colleges and universities across Malaysia.
   </p>
 
   <p>
@@ -211,15 +256,13 @@ footer {
   </p>
 
   <h2 class="section-title">Our Mission</h2>
- <p>
-    To assist international students in selecting the most suitable Malaysian institution and provide end-to-end placement services including program selection, admission, visa guidance & pre-departure support.
-</p>
-
-  <div style="text-align:center; margin: 20px 0;">
-    <img src="mission.png" alt="Our Mission Image" style="width:300px; border-radius:10px;">
-  </div>
-
-    <div class="aboutus-image-section">
+  <ul>
+    <li>To assist international students in selecting the most suitable Malaysian college or university based on academic goals, career aspirations, and budget.</li>
+    <li>To provide end-to-end student placement services including program selection, admission processing, visa guidance, and pre-departure support.</li>
+    <li>To support Malaysian higher education institutions in expanding their reach and diversity by tapping into new and emerging student markets.</li>
+  </ul>
+   
+  <div class="aboutus-image-section">
     <h2 class="section-title">Our Company Highlights</h2>
 
     <div class="gallery-container">
@@ -241,9 +284,8 @@ footer {
 
     </div>
   </div>
-
-
-  <div class="facility-section">
+ 
+<div class="facility-section">
     <h2 class="section-title">Our Facilities</h2>
 
     <div class="gallery-container">
@@ -266,8 +308,7 @@ footer {
     </div>
   </div>
 
-
-  <div class="certificate-section">
+<div class="certificate-section">
     <h2 class="section-title">Our Certifications</h2>
 
     <div class="certificate-box">
@@ -276,16 +317,16 @@ footer {
     </div>
   </div>
 
-
 </main>
 
-<footer>
-  <h3>Contact: +6017 282 7075 | highexcellence@outlook.com</h3>
-  <h3>© 2025 High Excellence Advisory. All Rights Reserved.</h3>
-</footer>
+    <footer>
+        <h3>Contact: +6017 282 7075 | highexcellence@outlook.com</h3>
+        <h3>©2025 High Excellence Advisory. All Rights Reserved.</h3>
+    </footer>
 
 </body>
 </html>
 
 
 
+   
